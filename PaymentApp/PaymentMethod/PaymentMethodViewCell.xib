@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="PaymentMethodViewCell" rowHeight="60" id="c62-Lu-nPE" customClass="PaymentMethodViewCell" customModule="PaymentApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="c62-Lu-nPE" id="xop-kI-IGW">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ztb-OC-Hog">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rtK-Ie-ds3">
+                                <rect key="frame" x="10" y="5" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Rrx-mI-n3m"/>
+                                    <constraint firstAttribute="width" constant="50" id="vwB-3t-zuS"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mHb-wg-jbt">
+                                <rect key="frame" x="90" y="20.5" width="39.5" height="19"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="mHb-wg-jbt" firstAttribute="leading" secondItem="rtK-Ie-ds3" secondAttribute="trailing" constant="30" id="9Sy-lg-Q56"/>
+                            <constraint firstAttribute="height" constant="60" id="MK5-6e-gQm"/>
+                            <constraint firstItem="rtK-Ie-ds3" firstAttribute="centerY" secondItem="Ztb-OC-Hog" secondAttribute="centerY" id="bgh-ov-4Nf"/>
+                            <constraint firstItem="mHb-wg-jbt" firstAttribute="centerY" secondItem="Ztb-OC-Hog" secondAttribute="centerY" id="gwC-1s-a43"/>
+                            <constraint firstItem="rtK-Ie-ds3" firstAttribute="leading" secondItem="Ztb-OC-Hog" secondAttribute="leading" constant="10" id="hiw-m4-ovG"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Ztb-OC-Hog" firstAttribute="top" secondItem="xop-kI-IGW" secondAttribute="top" id="Jnj-Ld-6xC"/>
+                    <constraint firstAttribute="bottom" secondItem="Ztb-OC-Hog" secondAttribute="bottom" id="X4n-YA-2zm"/>
+                    <constraint firstAttribute="trailing" secondItem="Ztb-OC-Hog" secondAttribute="trailing" id="vt7-ph-Tje"/>
+                    <constraint firstItem="Ztb-OC-Hog" firstAttribute="leading" secondItem="xop-kI-IGW" secondAttribute="leading" id="z2k-Nh-Vmj"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="bgCell" destination="Ztb-OC-Hog" id="NTs-tj-BRq"/>
+                <outlet property="imgLogo" destination="rtK-Ie-ds3" id="xHu-eC-beO"/>
+                <outlet property="lblName" destination="mHb-wg-jbt" id="uXU-n7-lxR"/>
+            </connections>
+            <point key="canvasLocation" x="-88.405797101449281" y="77.008928571428569"/>
+        </tableViewCell>
+    </objects>
+</document>
