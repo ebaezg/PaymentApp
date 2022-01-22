@@ -16,17 +16,17 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ztb-OC-Hog">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                        <rect key="frame" x="20" y="0.0" width="334" height="60"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rtK-Ie-ds3">
-                                <rect key="frame" x="10" y="5" width="50" height="50"/>
+                                <rect key="frame" x="10" y="10" width="40" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="Rrx-mI-n3m"/>
-                                    <constraint firstAttribute="width" constant="50" id="vwB-3t-zuS"/>
+                                    <constraint firstAttribute="height" constant="40" id="Rrx-mI-n3m"/>
+                                    <constraint firstAttribute="width" constant="40" id="vwB-3t-zuS"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mHb-wg-jbt">
-                                <rect key="frame" x="90" y="20.5" width="39.5" height="19"/>
+                                <rect key="frame" x="80" y="20.5" width="39.5" height="19"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -43,10 +43,10 @@
                     </view>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="Ztb-OC-Hog" firstAttribute="top" secondItem="xop-kI-IGW" secondAttribute="top" id="Jnj-Ld-6xC"/>
-                    <constraint firstAttribute="bottom" secondItem="Ztb-OC-Hog" secondAttribute="bottom" id="X4n-YA-2zm"/>
-                    <constraint firstAttribute="trailing" secondItem="Ztb-OC-Hog" secondAttribute="trailing" id="vt7-ph-Tje"/>
-                    <constraint firstItem="Ztb-OC-Hog" firstAttribute="leading" secondItem="xop-kI-IGW" secondAttribute="leading" id="z2k-Nh-Vmj"/>
+                    <constraint firstItem="Ztb-OC-Hog" firstAttribute="top" secondItem="xop-kI-IGW" secondAttribute="top" id="46c-B4-SHi"/>
+                    <constraint firstAttribute="bottom" secondItem="Ztb-OC-Hog" secondAttribute="bottom" id="WD1-X8-U0L"/>
+                    <constraint firstItem="Ztb-OC-Hog" firstAttribute="leading" secondItem="xop-kI-IGW" secondAttribute="leading" constant="20" id="rRQ-Iv-Sff"/>
+                    <constraint firstAttribute="trailing" secondItem="Ztb-OC-Hog" secondAttribute="trailing" constant="60" id="u03-ZV-Rc0"/>
                 </constraints>
             </tableViewCellContentView>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
