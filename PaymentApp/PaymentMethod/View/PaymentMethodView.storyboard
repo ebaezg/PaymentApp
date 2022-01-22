@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" contentViewInsetsToSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r4o-Zz-022">
-                                <rect key="frame" x="20" y="0.0" width="374" height="774"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
                                 <sections/>
                             </tableView>
                         </subviews>
@@ -25,9 +25,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="r4o-Zz-022" firstAttribute="top" secondItem="Luc-Jc-s7M" secondAttribute="top" id="1kS-io-vgB"/>
-                            <constraint firstItem="r4o-Zz-022" firstAttribute="leading" secondItem="Luc-Jc-s7M" secondAttribute="leading" constant="20" id="SKV-ho-rql"/>
+                            <constraint firstItem="r4o-Zz-022" firstAttribute="leading" secondItem="Luc-Jc-s7M" secondAttribute="leading" id="SKV-ho-rql"/>
                             <constraint firstItem="Luc-Jc-s7M" firstAttribute="bottom" secondItem="r4o-Zz-022" secondAttribute="bottom" id="Yid-23-98R"/>
-                            <constraint firstItem="Luc-Jc-s7M" firstAttribute="trailing" secondItem="r4o-Zz-022" secondAttribute="trailing" constant="20" id="rXa-qU-6L7"/>
+                            <constraint firstItem="Luc-Jc-s7M" firstAttribute="trailing" secondItem="r4o-Zz-022" secondAttribute="trailing" id="rXa-qU-6L7"/>
                         </constraints>
                     </view>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>

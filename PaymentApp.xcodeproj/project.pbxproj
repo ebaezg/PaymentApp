@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0642624788644FCA7A411315 /* Pods_PaymentApp_PaymentAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD9DD345E135C67B0F8073CE /* Pods_PaymentApp_PaymentAppUITests.framework */; };
+		399560BCDB7AF65733DF2DD8 /* Pods_PaymentApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F079E585D409B9A29E9E939C /* Pods_PaymentApp.framework */; };
 		4C42EDAA279A39EC00C13DD4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C42EDA9279A39EC00C13DD4 /* AppDelegate.swift */; };
 		4C42EDAC279A39EC00C13DD4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C42EDAB279A39EC00C13DD4 /* SceneDelegate.swift */; };
 		4C42EDAE279A39EC00C13DD4 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C42EDAD279A39EC00C13DD4 /* HomeView.swift */; };
@@ -23,6 +25,10 @@
 		4C42EE13279B46C700C13DD4 /* PaymentMethodModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C42EE12279B46C700C13DD4 /* PaymentMethodModel.swift */; };
 		4C42EE18279B48B000C13DD4 /* PaymentMethodViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C42EE17279B48B000C13DD4 /* PaymentMethodViewCell.xib */; };
 		4C42EE20279B48D700C13DD4 /* PaymentMethodViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C42EE1F279B48D700C13DD4 /* PaymentMethodViewCell.swift */; };
+		4C42EE54279B801400C13DD4 /* Paths.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C42EE53279B801400C13DD4 /* Paths.swift */; };
+		4C42EE5F279B817600C13DD4 /* PaymentMethodService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C42EE5E279B817600C13DD4 /* PaymentMethodService.swift */; };
+		4C42EE64279B818100C13DD4 /* PaymentMethodPersistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C42EE63279B818100C13DD4 /* PaymentMethodPersistence.swift */; };
+		94C19EE957489430D82C4413 /* Pods_PaymentAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC9DBDEE21B4060C602DFDC /* Pods_PaymentAppTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		48DACB4C703301FCA92D579D /* Pods-PaymentApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaymentApp.release.xcconfig"; path = "Target Support Files/Pods-PaymentApp/Pods-PaymentApp.release.xcconfig"; sourceTree = "<group>"; };
 		4C42EDA6279A39EB00C13DD4 /* PaymentApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PaymentApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C42EDA9279A39EC00C13DD4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4C42EDAB279A39EC00C13DD4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +72,17 @@
 		4C42EE12279B46C700C13DD4 /* PaymentMethodModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentMethodModel.swift; sourceTree = "<group>"; };
 		4C42EE17279B48B000C13DD4 /* PaymentMethodViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaymentMethodViewCell.xib; sourceTree = "<group>"; };
 		4C42EE1F279B48D700C13DD4 /* PaymentMethodViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentMethodViewCell.swift; sourceTree = "<group>"; };
+		4C42EE53279B801400C13DD4 /* Paths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Paths.swift; sourceTree = "<group>"; };
+		4C42EE5E279B817600C13DD4 /* PaymentMethodService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentMethodService.swift; sourceTree = "<group>"; };
+		4C42EE63279B818100C13DD4 /* PaymentMethodPersistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentMethodPersistence.swift; sourceTree = "<group>"; };
+		507368C2B3C6BF4313E9E2E9 /* Pods-PaymentApp-PaymentAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaymentApp-PaymentAppUITests.release.xcconfig"; path = "Target Support Files/Pods-PaymentApp-PaymentAppUITests/Pods-PaymentApp-PaymentAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		587218310A4256323D36B65F /* Pods-PaymentAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaymentAppTests.release.xcconfig"; path = "Target Support Files/Pods-PaymentAppTests/Pods-PaymentAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		5EC9DBDEE21B4060C602DFDC /* Pods_PaymentAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PaymentAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD9DD345E135C67B0F8073CE /* Pods_PaymentApp_PaymentAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PaymentApp_PaymentAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2D89BA1ED8F769B3ED16E50 /* Pods-PaymentAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaymentAppTests.debug.xcconfig"; path = "Target Support Files/Pods-PaymentAppTests/Pods-PaymentAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CD6306988B1E4EF066C685A0 /* Pods-PaymentApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaymentApp.debug.xcconfig"; path = "Target Support Files/Pods-PaymentApp/Pods-PaymentApp.debug.xcconfig"; sourceTree = "<group>"; };
+		F079E585D409B9A29E9E939C /* Pods_PaymentApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PaymentApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF73D65EA8BC38721BEC7B82 /* Pods-PaymentApp-PaymentAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaymentApp-PaymentAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-PaymentApp-PaymentAppUITests/Pods-PaymentApp-PaymentAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				399560BCDB7AF65733DF2DD8 /* Pods_PaymentApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94C19EE957489430D82C4413 /* Pods_PaymentAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0642624788644FCA7A411315 /* Pods_PaymentApp_PaymentAppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +120,8 @@
 				4C42EDBF279A3A3600C13DD4 /* PaymentAppTests */,
 				4C42EDCA279A3A3600C13DD4 /* PaymentAppUITests */,
 				4C42EDA7279A39EB00C13DD4 /* Products */,
+				D6B2AFCB522813B8FE355F70 /* Pods */,
+				BB3F2C79229EFEB2B5B9CD4A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -146,6 +169,7 @@
 				4C42EDB7279A3A3400C13DD4 /* Info.plist */,
 				4C42EDE0279A3D8B00C13DD4 /* View */,
 				4C42EDE1279A3DA100C13DD4 /* Controller */,
+				4C42EE52279B800000C13DD4 /* Utils */,
 			);
 			path = Global;
 			sourceTree = "<group>";
@@ -171,10 +195,9 @@
 		4C42EDE5279A3DDE00C13DD4 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				4C42EDAD279A39EC00C13DD4 /* HomeView.swift */,
-				4C42EDAF279A39EC00C13DD4 /* HomeView.storyboard */,
-				4C42EDF2279A40AF00C13DD4 /* HomeViewModel.swift */,
-				4C42EDF7279A40B600C13DD4 /* HomeModel.swift */,
+				4C42EE48279B7F4500C13DD4 /* Model */,
+				4C42EE43279B7F3500C13DD4 /* View */,
+				4C42EE47279B7F3E00C13DD4 /* ViewModel */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -182,14 +205,104 @@
 		4C42EE02279A679F00C13DD4 /* PaymentMethod */ = {
 			isa = PBXGroup;
 			children = (
+				4C42EE39279B662000C13DD4 /* Model */,
+				4C42EE37279B660700C13DD4 /* View */,
+				4C42EE38279B661800C13DD4 /* ViewModel */,
+				4C42EE42279B7DB200C13DD4 /* Service */,
+			);
+			path = PaymentMethod;
+			sourceTree = "<group>";
+		};
+		4C42EE37279B660700C13DD4 /* View */ = {
+			isa = PBXGroup;
+			children = (
 				4C42EE03279A67DC00C13DD4 /* PaymentMethodView.swift */,
 				4C42EE08279A682300C13DD4 /* PaymentMethodView.storyboard */,
-				4C42EE0D279B46A700C13DD4 /* PaymentMethodViewModel.swift */,
-				4C42EE12279B46C700C13DD4 /* PaymentMethodModel.swift */,
 				4C42EE17279B48B000C13DD4 /* PaymentMethodViewCell.xib */,
 				4C42EE1F279B48D700C13DD4 /* PaymentMethodViewCell.swift */,
 			);
-			path = PaymentMethod;
+			path = View;
+			sourceTree = "<group>";
+		};
+		4C42EE38279B661800C13DD4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4C42EE0D279B46A700C13DD4 /* PaymentMethodViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4C42EE39279B662000C13DD4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4C42EE12279B46C700C13DD4 /* PaymentMethodModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4C42EE42279B7DB200C13DD4 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				4C42EE5E279B817600C13DD4 /* PaymentMethodService.swift */,
+				4C42EE63279B818100C13DD4 /* PaymentMethodPersistence.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		4C42EE43279B7F3500C13DD4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4C42EDAD279A39EC00C13DD4 /* HomeView.swift */,
+				4C42EDAF279A39EC00C13DD4 /* HomeView.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4C42EE47279B7F3E00C13DD4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4C42EDF2279A40AF00C13DD4 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4C42EE48279B7F4500C13DD4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4C42EDF7279A40B600C13DD4 /* HomeModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4C42EE52279B800000C13DD4 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				4C42EE53279B801400C13DD4 /* Paths.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		BB3F2C79229EFEB2B5B9CD4A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F079E585D409B9A29E9E939C /* Pods_PaymentApp.framework */,
+				AD9DD345E135C67B0F8073CE /* Pods_PaymentApp_PaymentAppUITests.framework */,
+				5EC9DBDEE21B4060C602DFDC /* Pods_PaymentAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D6B2AFCB522813B8FE355F70 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CD6306988B1E4EF066C685A0 /* Pods-PaymentApp.debug.xcconfig */,
+				48DACB4C703301FCA92D579D /* Pods-PaymentApp.release.xcconfig */,
+				FF73D65EA8BC38721BEC7B82 /* Pods-PaymentApp-PaymentAppUITests.debug.xcconfig */,
+				507368C2B3C6BF4313E9E2E9 /* Pods-PaymentApp-PaymentAppUITests.release.xcconfig */,
+				C2D89BA1ED8F769B3ED16E50 /* Pods-PaymentAppTests.debug.xcconfig */,
+				587218310A4256323D36B65F /* Pods-PaymentAppTests.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,9 +312,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4C42EDD0279A3A3600C13DD4 /* Build configuration list for PBXNativeTarget "PaymentApp" */;
 			buildPhases = (
+				309E01FC8F4E24431EA1E2C0 /* [CP] Check Pods Manifest.lock */,
 				4C42EDA2279A39EB00C13DD4 /* Sources */,
 				4C42EDA3279A39EB00C13DD4 /* Frameworks */,
 				4C42EDA4279A39EB00C13DD4 /* Resources */,
+				1CD4FEDB2BF320F001677590 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -216,6 +331,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4C42EDD3279A3A3600C13DD4 /* Build configuration list for PBXNativeTarget "PaymentAppTests" */;
 			buildPhases = (
+				9C38044B02113BF88CB0B0AC /* [CP] Check Pods Manifest.lock */,
 				4C42EDB8279A3A3600C13DD4 /* Sources */,
 				4C42EDB9279A3A3600C13DD4 /* Frameworks */,
 				4C42EDBA279A3A3600C13DD4 /* Resources */,
@@ -234,9 +350,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4C42EDD6279A3A3600C13DD4 /* Build configuration list for PBXNativeTarget "PaymentAppUITests" */;
 			buildPhases = (
+				DDDB35857C02F0D8E487B558 /* [CP] Check Pods Manifest.lock */,
 				4C42EDC3279A3A3600C13DD4 /* Sources */,
 				4C42EDC4279A3A3600C13DD4 /* Frameworks */,
 				4C42EDC5279A3A3600C13DD4 /* Resources */,
+				6BD92C99BF5E48A907597C16 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -319,6 +437,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1CD4FEDB2BF320F001677590 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PaymentApp/Pods-PaymentApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PaymentApp/Pods-PaymentApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PaymentApp/Pods-PaymentApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		309E01FC8F4E24431EA1E2C0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PaymentApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6BD92C99BF5E48A907597C16 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PaymentApp-PaymentAppUITests/Pods-PaymentApp-PaymentAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PaymentApp-PaymentAppUITests/Pods-PaymentApp-PaymentAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PaymentApp-PaymentAppUITests/Pods-PaymentApp-PaymentAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C38044B02113BF88CB0B0AC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PaymentAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DDDB35857C02F0D8E487B558 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PaymentApp-PaymentAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4C42EDA2279A39EB00C13DD4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -329,8 +550,11 @@
 				4C42EDAC279A39EC00C13DD4 /* SceneDelegate.swift in Sources */,
 				4C42EE13279B46C700C13DD4 /* PaymentMethodModel.swift in Sources */,
 				4C42EDF8279A40B600C13DD4 /* HomeModel.swift in Sources */,
+				4C42EE64279B818100C13DD4 /* PaymentMethodPersistence.swift in Sources */,
+				4C42EE54279B801400C13DD4 /* Paths.swift in Sources */,
 				4C42EE0E279B46A700C13DD4 /* PaymentMethodViewModel.swift in Sources */,
 				4C42EE04279A67DC00C13DD4 /* PaymentMethodView.swift in Sources */,
+				4C42EE5F279B817600C13DD4 /* PaymentMethodService.swift in Sources */,
 				4C42EDF3279A40AF00C13DD4 /* HomeViewModel.swift in Sources */,
 				4C42EE20279B48D700C13DD4 /* PaymentMethodViewCell.swift in Sources */,
 			);
@@ -505,6 +729,7 @@
 		};
 		4C42EDD1279A3A3600C13DD4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD6306988B1E4EF066C685A0 /* Pods-PaymentApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -524,6 +749,7 @@
 		};
 		4C42EDD2279A3A3600C13DD4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48DACB4C703301FCA92D579D /* Pods-PaymentApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -543,6 +769,7 @@
 		};
 		4C42EDD4279A3A3600C13DD4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2D89BA1ED8F769B3ED16E50 /* Pods-PaymentAppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -565,6 +792,7 @@
 		};
 		4C42EDD5279A3A3600C13DD4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 587218310A4256323D36B65F /* Pods-PaymentAppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -587,6 +815,7 @@
 		};
 		4C42EDD7279A3A3600C13DD4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF73D65EA8BC38721BEC7B82 /* Pods-PaymentApp-PaymentAppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -607,6 +836,7 @@
 		};
 		4C42EDD8279A3A3600C13DD4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 507368C2B3C6BF4313E9E2E9 /* Pods-PaymentApp-PaymentAppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
