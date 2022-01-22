@@ -8,36 +8,35 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Payment Method View-->
-        <scene sceneID="h0C-vg-9JV">
+        <!--Card Issuer View-->
+        <scene sceneID="zUs-ER-zXq">
             <objects>
-                <viewController storyboardIdentifier="PaymentMethodView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="YSP-nZ-l8o" customClass="PaymentMethodView" customModule="PaymentApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="QTO-ne-HTS">
+                <viewController storyboardIdentifier="CardIssuerView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="o8R-VW-ngW" customClass="CardIssuerView" customModule="PaymentApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uzp-PA-Hql">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" contentViewInsetsToSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r4o-Zz-022">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="aoK-zl-1gR">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <sections/>
                             </tableView>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="Luc-Jc-s7M"/>
+                        <viewLayoutGuide key="safeArea" id="atr-XV-Lzy"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="r4o-Zz-022" firstAttribute="top" secondItem="Luc-Jc-s7M" secondAttribute="top" id="1kS-io-vgB"/>
-                            <constraint firstItem="r4o-Zz-022" firstAttribute="leading" secondItem="Luc-Jc-s7M" secondAttribute="leading" id="SKV-ho-rql"/>
-                            <constraint firstItem="Luc-Jc-s7M" firstAttribute="bottom" secondItem="r4o-Zz-022" secondAttribute="bottom" id="Yid-23-98R"/>
-                            <constraint firstItem="Luc-Jc-s7M" firstAttribute="trailing" secondItem="r4o-Zz-022" secondAttribute="trailing" id="rXa-qU-6L7"/>
+                            <constraint firstItem="aoK-zl-1gR" firstAttribute="top" secondItem="atr-XV-Lzy" secondAttribute="top" id="BTv-yl-PIu"/>
+                            <constraint firstItem="atr-XV-Lzy" firstAttribute="bottom" secondItem="aoK-zl-1gR" secondAttribute="bottom" id="h09-uM-scK"/>
+                            <constraint firstItem="aoK-zl-1gR" firstAttribute="leading" secondItem="atr-XV-Lzy" secondAttribute="leading" id="uiW-68-Sra"/>
+                            <constraint firstItem="atr-XV-Lzy" firstAttribute="trailing" secondItem="aoK-zl-1gR" secondAttribute="trailing" id="wi4-Ty-xHC"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="tablePaymentMethods" destination="r4o-Zz-022" id="kqC-Fe-jpN"/>
+                        <outlet property="tableCardIssuer" destination="aoK-zl-1gR" id="4RB-P4-fMD"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Tab-sc-KfW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qLf-9X-vyh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="29" y="33"/>
+            <point key="canvasLocation" x="141" y="115"/>
         </scene>
     </scenes>
     <resources>
