@@ -5,14 +5,6 @@ class PaymentMethodView: UIViewController {
     
     let cellIdentifier = "PaymentMethodViewCell"
     var paymentMethods: [PaymentMethodModel]?
-/*    let paymentMethods: [PaymentMethodViewCellModel] = [
-        PaymentMethodViewCellModel(image: UIImage(named: "logoMastercard") ?? UIImage(), text: "Mastercard"),
-        PaymentMethodViewCellModel(image: UIImage(named: "logoMastercard") ?? UIImage(), text: "Cordobesa"),
-        PaymentMethodViewCellModel(image: UIImage(named: "logoMastercard") ?? UIImage(), text: "CMR"),
-        PaymentMethodViewCellModel(image: UIImage(named: "logoMastercard") ?? UIImage(), text: "Visa"),
-        PaymentMethodViewCellModel(image: UIImage(named: "logoMastercard") ?? UIImage(), text: "Naranja"),
-        PaymentMethodViewCellModel(image: UIImage(named: "logoMastercard") ?? UIImage(), text: "Tarjeta Shopping")
-    ]*/
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,7 +43,13 @@ extension PaymentMethodView: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("SELECTED IS: \(paymentMethods?[indexPath.item])")
+        let sb = UIStoryboard(name: "CardIssuerView", bundle: .main)
+        let vc = sb.instantiateViewController(identifier: "CardIssuerView")
+        
+        PaymentModel.shared.paymentMethodId = self.paymentMethods?[indexPath.item].id
+        PaymentModel.shared.paymentMethodName = self.paymentMethods?[indexPath.item].name
+        
+        navigationController?.pushViewController(vc, animated: true)
     }
     
 }

@@ -5,15 +5,28 @@ class HomeView: UIViewController {
     @IBOutlet weak var maskAmount: UIView!
     @IBOutlet weak var txtAmount: UITextField!
     @IBOutlet weak var btnContinue: UIButton!
+    @IBOutlet weak var lblSubtitle: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        if (PaymentModel.shared.paymentCompleted == true) {
+            lblSubtitle.text = "Resumen Pago"
+            enableButton(isEnabled: false)
+        } else {
+            lblSubtitle.text = "Ingresar monto a pagar"
+        }
+    }
+    
     @IBAction func handleContinue(_ sender: UIButton) {
         let sb = UIStoryboard(name: "PaymentMethodView", bundle: .main)
         let vc = sb.instantiateViewController(identifier: "PaymentMethodView")
+        
+        PaymentModel.shared.amount = String(txtAmount.text!.dropFirst())
+        
         navigationController?.pushViewController(vc, animated: true)
     }
     
@@ -36,7 +49,6 @@ class HomeView: UIViewController {
         }*/
         
         let amountLength: Int = txtAmount.text!.count
-        if amountLength == 0 { txtAmount.text = "$" }
         enableButton(isEnabled: amountLength > 1)
     }
 
@@ -59,6 +71,7 @@ class HomeView: UIViewController {
             btnContinue.layer.backgroundColor = UIColor(named: "Purple")?.cgColor
             btnContinue.isEnabled = true
         } else {
+            txtAmount.text = "$"
             btnContinue.layer.backgroundColor = UIColor(named: "LightGray")?.cgColor
             btnContinue.isEnabled = false
         }

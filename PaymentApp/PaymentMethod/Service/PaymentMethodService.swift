@@ -11,10 +11,10 @@ class PaymentMethodService {
     
     static func getJson(data: Data) -> [PaymentMethodModel]? {
         do { paymentMethods = try JSONDecoder().decode([PaymentMethodModel].self, from: data) }
-        catch let error { print("paymenthMethodService error: \(error.localizedDescription)") }
+        catch let error { print("PaymenthMethodService error: \(error.localizedDescription)") }
         return paymentMethods?.filter({ paymentMethod -> Bool in
             paymentMethod.payment_type_id == "credit_card"
-        })
+        }).sorted(by: { (lhs, rhs) -> Bool in lhs.name ?? "" < rhs.name ?? "" })
     }
     
     static func getPaymentMethods(completion: @escaping ([PaymentMethodModel]?) -> Void) {
@@ -25,4 +25,5 @@ class PaymentMethodService {
             }
         }
     }
+    
 }

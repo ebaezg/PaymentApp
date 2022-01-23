@@ -1,10 +1,9 @@
 import UIKit
 
-class PaymentMethodViewCell: UITableViewCell {
+class CardIssuerViewCell: UITableViewCell {
     @IBOutlet weak var bgCell: UIView!
     @IBOutlet weak var imgLogo: UIImageView?
     @IBOutlet weak var lblName: UILabel?
-    
     
     func setup() {
         let bottomLine = CALayer()
