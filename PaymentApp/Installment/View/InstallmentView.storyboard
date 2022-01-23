@@ -23,24 +23,74 @@
                                 <color key="textColor" name="Black"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12 cuotas de $ 70.904,17 ($850.850,04)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mRB-w3-745">
+                                <rect key="frame" x="20" y="244" width="374" height="16"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="los-KV-bIh">
+                                <rect key="frame" x="20" y="290" width="374" height="52"/>
+                                <color key="backgroundColor" name="Purple"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="ahQ-ZE-8t4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
+                                <state key="normal" title="Pagar">
+                                    <color key="titleColor" name="White"/>
+                                </state>
+                            </button>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="xNR-zf-maU">
+                                <rect key="frame" x="20" y="134" width="374" height="90"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="Vae-Sj-iS0"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="5" id="zZL-3L-uuK">
+                                    <size key="itemSize" width="55" height="45"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="C2R-Yd-F6X"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="C2R-Yd-F6X" firstAttribute="trailing" secondItem="mRB-w3-745" secondAttribute="trailing" constant="20" id="5Rv-9w-daz"/>
+                            <constraint firstItem="los-KV-bIh" firstAttribute="top" secondItem="mRB-w3-745" secondAttribute="bottom" constant="30" id="6L4-ma-OjB"/>
+                            <constraint firstItem="xNR-zf-maU" firstAttribute="leading" secondItem="C2R-Yd-F6X" secondAttribute="leading" constant="20" id="EfY-xM-WNm"/>
+                            <constraint firstItem="xNR-zf-maU" firstAttribute="top" secondItem="EOn-zn-qdj" secondAttribute="bottom" constant="20" id="Fsk-7l-2La"/>
+                            <constraint firstItem="C2R-Yd-F6X" firstAttribute="trailing" secondItem="xNR-zf-maU" secondAttribute="trailing" constant="20" id="Lgw-l9-zET"/>
                             <constraint firstItem="EOn-zn-qdj" firstAttribute="top" secondItem="C2R-Yd-F6X" secondAttribute="top" constant="50" id="MO4-E1-Dtt"/>
                             <constraint firstItem="C2R-Yd-F6X" firstAttribute="trailing" secondItem="EOn-zn-qdj" secondAttribute="trailing" constant="20" id="NMO-gb-IWn"/>
+                            <constraint firstItem="mRB-w3-745" firstAttribute="leading" secondItem="C2R-Yd-F6X" secondAttribute="leading" constant="20" id="QNv-Xc-3Nb"/>
+                            <constraint firstItem="mRB-w3-745" firstAttribute="top" secondItem="xNR-zf-maU" secondAttribute="bottom" constant="20" id="VLF-lD-Bq6"/>
                             <constraint firstItem="EOn-zn-qdj" firstAttribute="leading" secondItem="C2R-Yd-F6X" secondAttribute="leading" constant="20" id="bee-EJ-6y8"/>
+                            <constraint firstItem="C2R-Yd-F6X" firstAttribute="trailing" secondItem="los-KV-bIh" secondAttribute="trailing" constant="20" id="fHh-Xe-jiu"/>
+                            <constraint firstItem="los-KV-bIh" firstAttribute="leading" secondItem="C2R-Yd-F6X" secondAttribute="leading" constant="20" id="mjk-be-m0H"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="btnPay" destination="los-KV-bIh" id="bhu-LF-aSc"/>
+                        <outlet property="collectionInstallments" destination="xNR-zf-maU" id="Nbz-u7-LqP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i4d-W8-ev5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-14" y="133"/>
+            <point key="canvasLocation" x="-14.492753623188406" y="132.58928571428572"/>
         </scene>
     </scenes>
     <resources>
         <namedColor name="Black">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Purple">
+            <color red="0.15686274509803921" green="0.023529411764705882" blue="0.61960784313725492" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="White">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

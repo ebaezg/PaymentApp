@@ -38,6 +38,8 @@
 		4C42EE9E279BA92000C13DD4 /* CardIssuerViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C42EE9D279BA92000C13DD4 /* CardIssuerViewCell.swift */; };
 		4C42EEC2279BB58E00C13DD4 /* InstallmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C42EEC1279BB58E00C13DD4 /* InstallmentView.swift */; };
 		4C42EECB279BB5CF00C13DD4 /* InstallmentView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C42EECA279BB5CF00C13DD4 /* InstallmentView.storyboard */; };
+		4CDF9843279CDD250031CFE7 /* InstallmentViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDF9842279CDD250031CFE7 /* InstallmentViewCell.swift */; };
+		4CDF984C279CE0320031CFE7 /* InstallmentViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CDF984B279CE0320031CFE7 /* InstallmentViewCell.xib */; };
 		94C19EE957489430D82C4413 /* Pods_PaymentAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC9DBDEE21B4060C602DFDC /* Pods_PaymentAppTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -95,6 +97,8 @@
 		4C42EE9D279BA92000C13DD4 /* CardIssuerViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardIssuerViewCell.swift; sourceTree = "<group>"; };
 		4C42EEC1279BB58E00C13DD4 /* InstallmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstallmentView.swift; sourceTree = "<group>"; };
 		4C42EECA279BB5CF00C13DD4 /* InstallmentView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InstallmentView.storyboard; sourceTree = "<group>"; };
+		4CDF9842279CDD250031CFE7 /* InstallmentViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstallmentViewCell.swift; sourceTree = "<group>"; };
+		4CDF984B279CE0320031CFE7 /* InstallmentViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InstallmentViewCell.xib; sourceTree = "<group>"; };
 		507368C2B3C6BF4313E9E2E9 /* Pods-PaymentApp-PaymentAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaymentApp-PaymentAppUITests.release.xcconfig"; path = "Target Support Files/Pods-PaymentApp-PaymentAppUITests/Pods-PaymentApp-PaymentAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		587218310A4256323D36B65F /* Pods-PaymentAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaymentAppTests.release.xcconfig"; path = "Target Support Files/Pods-PaymentAppTests/Pods-PaymentAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		5EC9DBDEE21B4060C602DFDC /* Pods_PaymentAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PaymentAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -364,6 +368,8 @@
 			children = (
 				4C42EEC1279BB58E00C13DD4 /* InstallmentView.swift */,
 				4C42EECA279BB5CF00C13DD4 /* InstallmentView.storyboard */,
+				4CDF9842279CDD250031CFE7 /* InstallmentViewCell.swift */,
+				4CDF984B279CE0320031CFE7 /* InstallmentViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -507,6 +513,7 @@
 				4C42EDB3279A3A3400C13DD4 /* Assets.xcassets in Resources */,
 				4C42EDB1279A39EC00C13DD4 /* HomeView.storyboard in Resources */,
 				4C42EECB279BB5CF00C13DD4 /* InstallmentView.storyboard in Resources */,
+				4CDF984C279CE0320031CFE7 /* InstallmentViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -648,6 +655,7 @@
 				4C42EE80279BA50100C13DD4 /* CardIssuerModel.swift in Sources */,
 				4C42EE87279BA69800C13DD4 /* CardIssuerViewModel.swift in Sources */,
 				4C42EE5F279B817600C13DD4 /* PaymentMethodService.swift in Sources */,
+				4CDF9843279CDD250031CFE7 /* InstallmentViewCell.swift in Sources */,
 				4C42EDF3279A40AF00C13DD4 /* HomeViewModel.swift in Sources */,
 				4C42EE71279BA24B00C13DD4 /* CardIssuerView.swift in Sources */,
 				4C42EE94279BA6BB00C13DD4 /* CardIssuerPersistance.swift in Sources */,
