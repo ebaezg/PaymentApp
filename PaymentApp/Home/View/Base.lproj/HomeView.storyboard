@@ -74,6 +74,7 @@
                     <navigationItem key="navigationItem" id="oQt-Wy-jJa"/>
                     <connections>
                         <outlet property="btnContinue" destination="cWd-tf-WeY" id="rAI-ft-3SC"/>
+                        <outlet property="lblSubtitle" destination="r1z-jy-ENe" id="1HK-fJ-439"/>
                         <outlet property="maskAmount" destination="iV0-vK-g0i" id="NEn-gK-X2c"/>
                         <outlet property="txtAmount" destination="p9l-CQ-iSi" id="sD6-fV-fYH"/>
                     </connections>

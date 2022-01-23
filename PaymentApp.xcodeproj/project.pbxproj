@@ -18,7 +18,7 @@
 		4C42EDC1279A3A3600C13DD4 /* PaymentAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C42EDC0279A3A3600C13DD4 /* PaymentAppTests.swift */; };
 		4C42EDCC279A3A3600C13DD4 /* PaymentAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C42EDCB279A3A3600C13DD4 /* PaymentAppUITests.swift */; };
 		4C42EDF3279A40AF00C13DD4 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C42EDF2279A40AF00C13DD4 /* HomeViewModel.swift */; };
-		4C42EDF8279A40B600C13DD4 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C42EDF7279A40B600C13DD4 /* HomeModel.swift */; };
+		4C42EDF8279A40B600C13DD4 /* PaymentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C42EDF7279A40B600C13DD4 /* PaymentModel.swift */; };
 		4C42EE04279A67DC00C13DD4 /* PaymentMethodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C42EE03279A67DC00C13DD4 /* PaymentMethodView.swift */; };
 		4C42EE09279A682300C13DD4 /* PaymentMethodView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C42EE08279A682300C13DD4 /* PaymentMethodView.storyboard */; };
 		4C42EE0E279B46A700C13DD4 /* PaymentMethodViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C42EE0D279B46A700C13DD4 /* PaymentMethodViewModel.swift */; };
@@ -40,6 +40,11 @@
 		4C42EECB279BB5CF00C13DD4 /* InstallmentView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C42EECA279BB5CF00C13DD4 /* InstallmentView.storyboard */; };
 		4CDF9843279CDD250031CFE7 /* InstallmentViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDF9842279CDD250031CFE7 /* InstallmentViewCell.swift */; };
 		4CDF984C279CE0320031CFE7 /* InstallmentViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CDF984B279CE0320031CFE7 /* InstallmentViewCell.xib */; };
+		4CDF9852279CEB3D0031CFE7 /* InstallmentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDF9851279CEB3D0031CFE7 /* InstallmentModel.swift */; };
+		4CDF9857279CEB910031CFE7 /* PayerCosts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDF9856279CEB910031CFE7 /* PayerCosts.swift */; };
+		4CDF9860279CEC250031CFE7 /* InstallmentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDF985F279CEC250031CFE7 /* InstallmentViewModel.swift */; };
+		4CDF9866279CEC3F0031CFE7 /* InstallmentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDF9865279CEC3F0031CFE7 /* InstallmentService.swift */; };
+		4CDF986E279CEC5A0031CFE7 /* InstallmentPersistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDF986D279CEC5A0031CFE7 /* InstallmentPersistance.swift */; };
 		94C19EE957489430D82C4413 /* Pods_PaymentAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC9DBDEE21B4060C602DFDC /* Pods_PaymentAppTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -77,7 +82,7 @@
 		4C42EDCB279A3A3600C13DD4 /* PaymentAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentAppUITests.swift; sourceTree = "<group>"; };
 		4C42EDCD279A3A3600C13DD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C42EDF2279A40AF00C13DD4 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
-		4C42EDF7279A40B600C13DD4 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
+		4C42EDF7279A40B600C13DD4 /* PaymentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentModel.swift; sourceTree = "<group>"; };
 		4C42EE03279A67DC00C13DD4 /* PaymentMethodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentMethodView.swift; sourceTree = "<group>"; };
 		4C42EE08279A682300C13DD4 /* PaymentMethodView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PaymentMethodView.storyboard; sourceTree = "<group>"; };
 		4C42EE0D279B46A700C13DD4 /* PaymentMethodViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentMethodViewModel.swift; sourceTree = "<group>"; };
@@ -99,6 +104,11 @@
 		4C42EECA279BB5CF00C13DD4 /* InstallmentView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InstallmentView.storyboard; sourceTree = "<group>"; };
 		4CDF9842279CDD250031CFE7 /* InstallmentViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstallmentViewCell.swift; sourceTree = "<group>"; };
 		4CDF984B279CE0320031CFE7 /* InstallmentViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InstallmentViewCell.xib; sourceTree = "<group>"; };
+		4CDF9851279CEB3D0031CFE7 /* InstallmentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstallmentModel.swift; sourceTree = "<group>"; };
+		4CDF9856279CEB910031CFE7 /* PayerCosts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayerCosts.swift; sourceTree = "<group>"; };
+		4CDF985F279CEC250031CFE7 /* InstallmentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstallmentViewModel.swift; sourceTree = "<group>"; };
+		4CDF9865279CEC3F0031CFE7 /* InstallmentService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstallmentService.swift; sourceTree = "<group>"; };
+		4CDF986D279CEC5A0031CFE7 /* InstallmentPersistance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstallmentPersistance.swift; sourceTree = "<group>"; };
 		507368C2B3C6BF4313E9E2E9 /* Pods-PaymentApp-PaymentAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaymentApp-PaymentAppUITests.release.xcconfig"; path = "Target Support Files/Pods-PaymentApp-PaymentAppUITests/Pods-PaymentApp-PaymentAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		587218310A4256323D36B65F /* Pods-PaymentAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaymentAppTests.release.xcconfig"; path = "Target Support Files/Pods-PaymentAppTests/Pods-PaymentAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		5EC9DBDEE21B4060C602DFDC /* Pods_PaymentAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PaymentAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -295,7 +305,7 @@
 		4C42EE48279B7F4500C13DD4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				4C42EDF7279A40B600C13DD4 /* HomeModel.swift */,
+				4C42EDF7279A40B600C13DD4 /* PaymentModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -358,7 +368,10 @@
 		4C42EEC0279BB56C00C13DD4 /* Installment */ = {
 			isa = PBXGroup;
 			children = (
+				4CDF9850279CEB300031CFE7 /* Model */,
 				4C42EEC9279BB5C400C13DD4 /* View */,
+				4CDF985E279CEC0B0031CFE7 /* ViewModel */,
+				4CDF9864279CEC330031CFE7 /* Service */,
 			);
 			path = Installment;
 			sourceTree = "<group>";
@@ -372,6 +385,32 @@
 				4CDF984B279CE0320031CFE7 /* InstallmentViewCell.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		4CDF9850279CEB300031CFE7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4CDF9851279CEB3D0031CFE7 /* InstallmentModel.swift */,
+				4CDF9856279CEB910031CFE7 /* PayerCosts.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4CDF985E279CEC0B0031CFE7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4CDF985F279CEC250031CFE7 /* InstallmentViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4CDF9864279CEC330031CFE7 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				4CDF9865279CEC3F0031CFE7 /* InstallmentService.swift */,
+				4CDF986D279CEC5A0031CFE7 /* InstallmentPersistance.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 		BB3F2C79229EFEB2B5B9CD4A /* Frameworks */ = {
@@ -643,16 +682,21 @@
 			files = (
 				4C42EE9E279BA92000C13DD4 /* CardIssuerViewCell.swift in Sources */,
 				4C42EDAE279A39EC00C13DD4 /* HomeView.swift in Sources */,
+				4CDF986E279CEC5A0031CFE7 /* InstallmentPersistance.swift in Sources */,
 				4C42EDAA279A39EC00C13DD4 /* AppDelegate.swift in Sources */,
 				4C42EDAC279A39EC00C13DD4 /* SceneDelegate.swift in Sources */,
 				4C42EE13279B46C700C13DD4 /* PaymentMethodModel.swift in Sources */,
-				4C42EDF8279A40B600C13DD4 /* HomeModel.swift in Sources */,
+				4CDF9860279CEC250031CFE7 /* InstallmentViewModel.swift in Sources */,
+				4C42EDF8279A40B600C13DD4 /* PaymentModel.swift in Sources */,
 				4C42EE64279B818100C13DD4 /* PaymentMethodPersistence.swift in Sources */,
 				4C42EE54279B801400C13DD4 /* Paths.swift in Sources */,
+				4CDF9852279CEB3D0031CFE7 /* InstallmentModel.swift in Sources */,
 				4C42EE0E279B46A700C13DD4 /* PaymentMethodViewModel.swift in Sources */,
 				4C42EE04279A67DC00C13DD4 /* PaymentMethodView.swift in Sources */,
 				4C42EE8F279BA6AD00C13DD4 /* CardIssuerService.swift in Sources */,
+				4CDF9857279CEB910031CFE7 /* PayerCosts.swift in Sources */,
 				4C42EE80279BA50100C13DD4 /* CardIssuerModel.swift in Sources */,
+				4CDF9866279CEC3F0031CFE7 /* InstallmentService.swift in Sources */,
 				4C42EE87279BA69800C13DD4 /* CardIssuerViewModel.swift in Sources */,
 				4C42EE5F279B817600C13DD4 /* PaymentMethodService.swift in Sources */,
 				4CDF9843279CDD250031CFE7 /* InstallmentViewCell.swift in Sources */,

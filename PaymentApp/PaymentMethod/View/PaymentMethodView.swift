@@ -45,6 +45,10 @@ extension PaymentMethodView: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let sb = UIStoryboard(name: "CardIssuerView", bundle: .main)
         let vc = sb.instantiateViewController(identifier: "CardIssuerView")
+        
+        PaymentModel.shared.paymentMethodId = self.paymentMethods?[indexPath.item].id
+        PaymentModel.shared.paymentMethodName = self.paymentMethods?[indexPath.item].name
+        
         navigationController?.pushViewController(vc, animated: true)
     }
     

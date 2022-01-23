@@ -6,7 +6,7 @@ class CardIssuerService {
     static let URL = Paths.basePath+Paths.cardIssuers
     
     static func parameters() -> [String: String] {
-        return ["public_key": Paths.PUBLIC_KEY, "payment_method_id": "master"]
+        return ["public_key": Paths.PUBLIC_KEY, "payment_method_id": PaymentModel.shared.paymentMethodId!]
     }
     
     static func getJson(data: Data) -> [CardIssuerModel]? {

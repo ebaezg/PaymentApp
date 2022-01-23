@@ -44,6 +44,10 @@ extension CardIssuerView: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let sb = UIStoryboard(name: "InstallmentView", bundle: .main)
         let vc = sb.instantiateViewController(identifier: "InstallmentView")
+        
+        PaymentModel.shared.cardIssuerId = self.cardIssuers?[indexPath.item].id
+        PaymentModel.shared.cardIssuerName = self.cardIssuers?[indexPath.item].name
+        
         navigationController?.pushViewController(vc, animated: true)
     }
     

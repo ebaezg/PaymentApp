@@ -20,7 +20,7 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5qL-kv-dZX">
                         <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="epu-jf-dBB">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="epu-jf-dBB">
                                 <rect key="frame" x="16" y="12" width="8" height="16.5"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                 <color key="textColor" name="Gray"/>
@@ -31,8 +31,8 @@
                         <constraints>
                             <constraint firstItem="epu-jf-dBB" firstAttribute="centerX" secondItem="5qL-kv-dZX" secondAttribute="centerX" id="MBc-o3-Kyc"/>
                             <constraint firstItem="epu-jf-dBB" firstAttribute="centerY" secondItem="5qL-kv-dZX" secondAttribute="centerY" id="Mfu-lA-m0e"/>
-                            <constraint firstAttribute="height" constant="40" id="OWX-E0-vyZ"/>
-                            <constraint firstAttribute="width" constant="40" id="tPm-QI-GEP"/>
+                            <constraint firstAttribute="height" priority="999" constant="40" id="OWX-E0-vyZ"/>
+                            <constraint firstAttribute="width" priority="999" constant="40" id="tPm-QI-GEP"/>
                         </constraints>
                     </view>
                 </subviews>
