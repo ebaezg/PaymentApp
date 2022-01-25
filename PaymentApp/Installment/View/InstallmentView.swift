@@ -1,6 +1,8 @@
 import UIKit
 
 class InstallmentView: UIViewController {
+    @IBOutlet weak var containerInstallments: UIView!
+    @IBOutlet weak var indicator: UIActivityIndicatorView!
     @IBOutlet weak var collectionInstallments: UICollectionView!
     @IBOutlet weak var btnPay: UIButton?
     @IBOutlet weak var lblRecommendedMessage: UILabel?
@@ -19,6 +21,8 @@ class InstallmentView: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         InstallmentService.getInstallments { [weak self] installment in
             guard let self = self else { return }
+            self.indicator.stopAnimating()
+            self.containerInstallments.isHidden = false
             self.installments = installment
             self.lblRecommendedMessage?.text = self.installments?[0].recommended_message
             self.installments?[0].selected = true
@@ -28,7 +32,7 @@ class InstallmentView: UIViewController {
     
     func setup() {
         title = "Cuotas"
-        
+        containerInstallments.isHidden = true
         btnPay?.layer.cornerRadius = 16.0
     }
     
@@ -42,7 +46,17 @@ class InstallmentView: UIViewController {
         PaymentModel.shared.totalAmount = String((installmentSelected?.total_amount)!)
         PaymentModel.shared.paymentCompleted = true
         
-        navigationController?.popToRootViewController(animated: true)
+        showAlert()
+    }
+    
+    func showAlert() {
+        let alert = UIAlertController(title: "Listo!", message: "El pago ha sido completado correctamente.", preferredStyle: .alert)
+
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { completion in
+            self.navigationController?.popToRootViewController(animated: true)
+        }))
+
+        self.present(alert, animated: true, completion: nil)
     }
     
 }

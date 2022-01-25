@@ -4,6 +4,7 @@ class CardIssuerView: UIViewController {
     @IBOutlet weak var tableCardIssuer: UITableView!
     let cellIdentifier = "CardIssuerViewCell"
     var cardIssuers: [CardIssuerModel]?
+    @IBOutlet weak var indicator: UIActivityIndicatorView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,6 +17,8 @@ class CardIssuerView: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         CardIssuerService.getCardIssuers { [weak self] completion in
             guard let self = self else { return }
+            self.indicator.stopAnimating()
+            self.tableCardIssuer.isHidden = false
             self.cardIssuers = completion
             self.tableCardIssuer?.reloadData()
         }
@@ -23,6 +26,7 @@ class CardIssuerView: UIViewController {
     
     func setup() {
         title = "Banco"
+        tableCardIssuer.isHidden = true
     }
 }
 

@@ -2,6 +2,7 @@ import UIKit
 
 class PaymentMethodView: UIViewController {
     @IBOutlet weak var tablePaymentMethods: UITableView?
+    @IBOutlet weak var indicator: UIActivityIndicatorView!
     
     let cellIdentifier = "PaymentMethodViewCell"
     var paymentMethods: [PaymentMethodModel]?
@@ -17,6 +18,8 @@ class PaymentMethodView: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         PaymentMethodService.getPaymentMethods { [weak self] completion in
             guard let self = self else { return }
+            self.indicator.stopAnimating()
+            self.tablePaymentMethods?.isHidden = false
             self.paymentMethods = completion
             self.tablePaymentMethods?.reloadData()
         }
@@ -24,6 +27,7 @@ class PaymentMethodView: UIViewController {
     
     func setup() {
         title = "Medio de Pago"
+        self.tablePaymentMethods?.isHidden = true
     }
 }
 
