@@ -2,31 +2,38 @@ import UIKit
 
 class CardIssuerView: UIViewController {
     @IBOutlet weak var tableCardIssuer: UITableView!
-    let cellIdentifier = "CardIssuerViewCell"
-    var cardIssuers: [CardIssuerModel]?
     @IBOutlet weak var indicator: UIActivityIndicatorView!
+    
+    let cardIssuerViewModel = CardIssuerViewModel()
+    var cardIssuers: [CardIssuerModel]?
+    let cellIdentifier = "CardIssuerViewCell"
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
-        tableCardIssuer?.delegate = self
-        tableCardIssuer?.dataSource = self
-        tableCardIssuer?.register(UINib(nibName: cellIdentifier, bundle: .main), forCellReuseIdentifier: cellIdentifier)
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        CardIssuerService.getCardIssuers { [weak self] completion in
-            guard let self = self else { return }
-            self.indicator.stopAnimating()
-            self.tableCardIssuer.isHidden = false
-            self.cardIssuers = completion
-            self.tableCardIssuer?.reloadData()
-        }
+        getCardIssuers()
     }
     
     func setup() {
+        tableCardIssuer?.delegate = self
+        tableCardIssuer?.dataSource = self
+        tableCardIssuer?.register(UINib(nibName: cellIdentifier, bundle: .main), forCellReuseIdentifier: cellIdentifier)
+        
         title = "Banco"
         tableCardIssuer.isHidden = true
+    }
+    
+    func getCardIssuers() {
+        cardIssuerViewModel.getCardIssuers { [weak self] cardIssuers in
+            guard let self = self else { return }
+            self.cardIssuers = cardIssuers
+            self.indicator.stopAnimating()
+            self.tableCardIssuer.isHidden = false
+            self.tableCardIssuer?.reloadData()
+        }
     }
 }
 

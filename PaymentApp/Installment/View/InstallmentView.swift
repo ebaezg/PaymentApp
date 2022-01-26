@@ -6,34 +6,18 @@ class InstallmentView: UIViewController {
     @IBOutlet weak var collectionInstallments: UICollectionView!
     @IBOutlet weak var btnPay: UIButton?
     @IBOutlet weak var lblRecommendedMessage: UILabel?
-    let cellIdentifier = "InstallmentViewCell"
+    
+    let installmentViewModel = InstallmentViewModel()
     var installments: [PayerCosts]?
+    let cellIdentifier = "InstallmentViewCell"
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
-        collectionInstallments.dataSource = self
-        collectionInstallments.delegate = self
-        
-        collectionInstallments.register(UINib(nibName: cellIdentifier, bundle: .main), forCellWithReuseIdentifier: cellIdentifier)
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        InstallmentService.getInstallments { [weak self] installment in
-            guard let self = self else { return }
-            self.indicator.stopAnimating()
-            self.containerInstallments.isHidden = false
-            self.installments = installment
-            self.lblRecommendedMessage?.text = self.installments?[0].recommended_message
-            self.installments?[0].selected = true
-            self.collectionInstallments.reloadData()
-        }
-    }
-    
-    func setup() {
-        title = "Cuotas"
-        containerInstallments.isHidden = true
-        btnPay?.layer.cornerRadius = 16.0
+        getInstallments()
     }
     
     @IBAction func handlePay(_ sender: UIButton) {
@@ -47,6 +31,28 @@ class InstallmentView: UIViewController {
         PaymentModel.shared.paymentCompleted = true
         
         showAlert()
+    }
+    
+    func setup() {
+        collectionInstallments.dataSource = self
+        collectionInstallments.delegate = self
+        collectionInstallments.register(UINib(nibName: cellIdentifier, bundle: .main), forCellWithReuseIdentifier: cellIdentifier)
+        
+        title = "Cuotas"
+        containerInstallments.isHidden = true
+        btnPay?.layer.cornerRadius = 16.0
+    }
+    
+    func getInstallments() {
+        installmentViewModel.getInstallments{ [weak self] installment in
+            guard let self = self else { return }
+            self.installments = installment
+            self.indicator.stopAnimating()
+            self.containerInstallments.isHidden = false
+            self.lblRecommendedMessage?.text = self.installments?[0].recommended_message
+            self.installments?[0].selected = true
+            self.collectionInstallments.reloadData()
+        }
     }
     
     func showAlert() {

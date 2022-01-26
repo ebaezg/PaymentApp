@@ -13,6 +13,7 @@ class PaymentMethodService {
         do { paymentMethods = try JSONDecoder().decode([PaymentMethodModel].self, from: data) }
         catch let error { print("PaymenthMethodService error: \(error.localizedDescription)") }
         return paymentMethods?.filter({ paymentMethod -> Bool in
+            // Filter payment methods by credit_card
             paymentMethod.payment_type_id == "credit_card"
         }).sorted(by: { (lhs, rhs) -> Bool in lhs.name ?? "" < rhs.name ?? "" })
     }

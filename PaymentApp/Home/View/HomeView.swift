@@ -24,7 +24,6 @@ class HomeView: UIViewController {
     }
 
     override func viewWillAppear(_ animated: Bool) {
-        print("PaymentModel.shared.paymentCompleted: \(PaymentModel.shared.paymentCompleted)")
         showAmountView(show: !PaymentModel.shared.paymentCompleted)
     }
     
@@ -52,22 +51,6 @@ class HomeView: UIViewController {
     }
     
     @IBAction func amountChanged(_ sender: UITextField) {
-        /*txtAmount.text!.remove(at: txtAmount.text!.startIndex)
-        print("aaaaa: \(txtAmount.text!)")
-        let amount = Decimal(string: txtAmount.text!)!
-        print("amount: \(amount)")
-        let amountLength: Int = txtAmount.text!.count
-        
-        if amountLength == 0 { txtAmount.text = "$" }
-        let formatter = NumberFormatter()
-        formatter.numberStyle = .currency
-        formatter.usesGroupingSeparator = true
-        
-        let doubleValue = amount.doubleValue
-        if let result = formatter.string(from: doubleValue as NSNumber) {
-            print("RESULT: \(result)")
-            txtAmount.text = result
-        }*/
         if let count = txtAmount.text?.count {
             count < 15 ? enableButton(isEnabled: isValidAmount(amount: txtAmount.text!)) : nil
         }
@@ -141,11 +124,3 @@ class HomeView: UIViewController {
     }
 
 }
-
-
-/*extension Decimal {
-    var doubleValue: Double {
-        return NSDecimalNumber(decimal: self).doubleValue
-    }
-}
-*/

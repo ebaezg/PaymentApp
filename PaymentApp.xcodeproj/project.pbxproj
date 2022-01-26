@@ -109,6 +109,7 @@
 		4CDF985F279CEC250031CFE7 /* InstallmentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstallmentViewModel.swift; sourceTree = "<group>"; };
 		4CDF9865279CEC3F0031CFE7 /* InstallmentService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstallmentService.swift; sourceTree = "<group>"; };
 		4CDF986D279CEC5A0031CFE7 /* InstallmentPersistance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstallmentPersistance.swift; sourceTree = "<group>"; };
+		4CDF988927A0F2600031CFE7 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		507368C2B3C6BF4313E9E2E9 /* Pods-PaymentApp-PaymentAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaymentApp-PaymentAppUITests.release.xcconfig"; path = "Target Support Files/Pods-PaymentApp-PaymentAppUITests/Pods-PaymentApp-PaymentAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		587218310A4256323D36B65F /* Pods-PaymentAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaymentAppTests.release.xcconfig"; path = "Target Support Files/Pods-PaymentAppTests/Pods-PaymentAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		5EC9DBDEE21B4060C602DFDC /* Pods_PaymentAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PaymentAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -203,6 +204,7 @@
 			isa = PBXGroup;
 			children = (
 				4C42EDB7279A3A3400C13DD4 /* Info.plist */,
+				4CDF988927A0F2600031CFE7 /* README.md */,
 				4C42EDE0279A3D8B00C13DD4 /* View */,
 				4C42EDE1279A3DA100C13DD4 /* Controller */,
 				4C42EE52279B800000C13DD4 /* Utils */,
