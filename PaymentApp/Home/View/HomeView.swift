@@ -30,8 +30,8 @@ class HomeView: UIViewController {
     @IBAction func handleContinue(_ sender: UIButton) {
         let sb = UIStoryboard(name: "PaymentMethodView", bundle: .main)
         let vc = sb.instantiateViewController(identifier: "PaymentMethodView")
-        
-        PaymentModel.shared.amount = String(txtAmount.text!.dropFirst())
+        let formattedAmount = Int(String(txtAmount.text!.dropFirst()))
+        PaymentModel.shared.amount = String(formattedAmount!)
         txtAmount.resignFirstResponder()
         navigationController?.pushViewController(vc, animated: true)
     }
