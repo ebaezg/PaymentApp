@@ -17,67 +17,86 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seleccionar cantidad de cuotas" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EOn-zn-qdj">
-                                <rect key="frame" x="20" y="94" width="374" height="20"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
-                                <color key="textColor" name="Black"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="recommended message" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mRB-w3-745">
-                                <rect key="frame" x="20" y="244" width="374" height="16"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="los-KV-bIh">
-                                <rect key="frame" x="20" y="290" width="374" height="52"/>
-                                <color key="backgroundColor" name="Purple"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="52" id="ahQ-ZE-8t4"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
-                                <state key="normal" title="Pagar">
-                                    <color key="titleColor" name="White"/>
-                                </state>
-                                <connections>
-                                    <action selector="handlePay:" destination="pZh-BE-sgc" eventType="touchUpInside" id="eXV-BE-cZJ"/>
-                                </connections>
-                            </button>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="HbP-bc-qHF">
-                                <rect key="frame" x="60" y="134" width="294" height="90"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Axe-li-DiP">
+                                <rect key="frame" x="20" y="94" width="374" height="248"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seleccionar cantidad de cuotas" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EOn-zn-qdj">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="20"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                                        <color key="textColor" name="Black"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="HbP-bc-qHF">
+                                        <rect key="frame" x="40" y="40" width="294" height="90"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="90" id="nJw-er-1ir"/>
+                                        </constraints>
+                                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="4" id="7JS-J4-CST">
+                                            <size key="itemSize" width="128" height="128"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells/>
+                                    </collectionView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="recommended message" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mRB-w3-745">
+                                        <rect key="frame" x="0.0" y="150" width="374" height="16"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="los-KV-bIh">
+                                        <rect key="frame" x="0.0" y="196" width="374" height="52"/>
+                                        <color key="backgroundColor" name="Purple"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="52" id="ahQ-ZE-8t4"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
+                                        <state key="normal" title="Pagar">
+                                            <color key="titleColor" name="White"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="handlePay:" destination="pZh-BE-sgc" eventType="touchUpInside" id="eXV-BE-cZJ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="90" id="nJw-er-1ir"/>
+                                    <constraint firstItem="mRB-w3-745" firstAttribute="top" secondItem="HbP-bc-qHF" secondAttribute="bottom" constant="20" id="BDb-0i-Gfk"/>
+                                    <constraint firstAttribute="trailing" secondItem="los-KV-bIh" secondAttribute="trailing" id="Fg0-Bl-GxT"/>
+                                    <constraint firstItem="HbP-bc-qHF" firstAttribute="leading" secondItem="Axe-li-DiP" secondAttribute="leading" constant="40" id="KNO-cs-MBi"/>
+                                    <constraint firstAttribute="height" constant="248" id="KZu-jk-vhq"/>
+                                    <constraint firstItem="EOn-zn-qdj" firstAttribute="leading" secondItem="Axe-li-DiP" secondAttribute="leading" id="NBx-1E-2Og"/>
+                                    <constraint firstItem="los-KV-bIh" firstAttribute="top" secondItem="mRB-w3-745" secondAttribute="bottom" constant="30" id="Pra-AY-zLZ"/>
+                                    <constraint firstItem="HbP-bc-qHF" firstAttribute="top" secondItem="EOn-zn-qdj" secondAttribute="bottom" constant="20" id="TZH-6C-kAM"/>
+                                    <constraint firstItem="los-KV-bIh" firstAttribute="leading" secondItem="Axe-li-DiP" secondAttribute="leading" id="ZYk-xi-PUw"/>
+                                    <constraint firstAttribute="trailing" secondItem="HbP-bc-qHF" secondAttribute="trailing" constant="40" id="gwp-il-KOc"/>
+                                    <constraint firstAttribute="trailing" secondItem="EOn-zn-qdj" secondAttribute="trailing" id="k1J-BS-73h"/>
+                                    <constraint firstItem="EOn-zn-qdj" firstAttribute="top" secondItem="Axe-li-DiP" secondAttribute="top" id="lWO-0m-eF1"/>
+                                    <constraint firstAttribute="trailing" secondItem="mRB-w3-745" secondAttribute="trailing" id="s2s-Lx-HQV"/>
+                                    <constraint firstItem="mRB-w3-745" firstAttribute="leading" secondItem="Axe-li-DiP" secondAttribute="leading" id="vF7-mC-25e"/>
                                 </constraints>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="4" id="7JS-J4-CST">
-                                    <size key="itemSize" width="128" height="128"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells/>
-                            </collectionView>
+                            </view>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="Qqc-jp-du6">
+                                <rect key="frame" x="197" y="438" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="C2R-Yd-F6X"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="HbP-bc-qHF" firstAttribute="leading" secondItem="C2R-Yd-F6X" secondAttribute="leading" constant="60" id="0Th-b5-Jgy"/>
-                            <constraint firstItem="HbP-bc-qHF" firstAttribute="top" secondItem="EOn-zn-qdj" secondAttribute="bottom" constant="20" id="2a1-ah-i94"/>
-                            <constraint firstItem="C2R-Yd-F6X" firstAttribute="trailing" secondItem="HbP-bc-qHF" secondAttribute="trailing" constant="60" id="3AC-DV-Ggb"/>
-                            <constraint firstItem="C2R-Yd-F6X" firstAttribute="trailing" secondItem="mRB-w3-745" secondAttribute="trailing" constant="20" id="5Rv-9w-daz"/>
-                            <constraint firstItem="los-KV-bIh" firstAttribute="top" secondItem="mRB-w3-745" secondAttribute="bottom" constant="30" id="6L4-ma-OjB"/>
-                            <constraint firstItem="EOn-zn-qdj" firstAttribute="top" secondItem="C2R-Yd-F6X" secondAttribute="top" constant="50" id="MO4-E1-Dtt"/>
-                            <constraint firstItem="C2R-Yd-F6X" firstAttribute="trailing" secondItem="EOn-zn-qdj" secondAttribute="trailing" constant="20" id="NMO-gb-IWn"/>
-                            <constraint firstItem="mRB-w3-745" firstAttribute="leading" secondItem="C2R-Yd-F6X" secondAttribute="leading" constant="20" id="QNv-Xc-3Nb"/>
-                            <constraint firstItem="EOn-zn-qdj" firstAttribute="leading" secondItem="C2R-Yd-F6X" secondAttribute="leading" constant="20" id="bee-EJ-6y8"/>
-                            <constraint firstItem="C2R-Yd-F6X" firstAttribute="trailing" secondItem="los-KV-bIh" secondAttribute="trailing" constant="20" id="fHh-Xe-jiu"/>
-                            <constraint firstItem="mRB-w3-745" firstAttribute="top" secondItem="HbP-bc-qHF" secondAttribute="bottom" constant="20" id="lHi-0G-Pac"/>
-                            <constraint firstItem="los-KV-bIh" firstAttribute="leading" secondItem="C2R-Yd-F6X" secondAttribute="leading" constant="20" id="mjk-be-m0H"/>
+                            <constraint firstItem="C2R-Yd-F6X" firstAttribute="trailing" secondItem="Axe-li-DiP" secondAttribute="trailing" constant="20" id="A7m-MM-yYD"/>
+                            <constraint firstItem="Axe-li-DiP" firstAttribute="leading" secondItem="C2R-Yd-F6X" secondAttribute="leading" constant="20" id="Eil-Ev-1mc"/>
+                            <constraint firstItem="Axe-li-DiP" firstAttribute="top" secondItem="C2R-Yd-F6X" secondAttribute="top" constant="50" id="aVp-X1-kds"/>
+                            <constraint firstItem="Qqc-jp-du6" firstAttribute="centerX" secondItem="qpl-Ir-Ueq" secondAttribute="centerX" id="c8l-wg-XFt"/>
+                            <constraint firstItem="Qqc-jp-du6" firstAttribute="centerY" secondItem="qpl-Ir-Ueq" secondAttribute="centerY" id="zdY-nc-Nk2"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="btnPay" destination="los-KV-bIh" id="T9f-dq-sPc"/>
                         <outlet property="collectionInstallments" destination="HbP-bc-qHF" id="50k-ja-PaQ"/>
+                        <outlet property="containerInstallments" destination="Axe-li-DiP" id="BIJ-9t-biu"/>
+                        <outlet property="indicator" destination="Qqc-jp-du6" id="gMO-tN-13d"/>
                         <outlet property="lblRecommendedMessage" destination="mRB-w3-745" id="OXw-cW-rzs"/>
                     </connections>
                 </viewController>

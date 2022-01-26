@@ -2,6 +2,7 @@ import UIKit
 
 class PaymentModel {
     static let shared = PaymentModel()
+    
     var amount: String?
     var paymentMethodId: String?
     var paymentMethodName: String?
@@ -10,19 +11,7 @@ class PaymentModel {
     var installments: String?
     var installmentAmount: String?
     var totalAmount: String?
-    var paymentCompleted: Bool?
+    var paymentCompleted = false
     
     private init() {}
-    
-    func resetPaymentModel() {
-        amount = ""
-        paymentMethodId = ""
-        paymentMethodName = ""
-        cardIssuerId = ""
-        cardIssuerName = ""
-        installments = ""
-        installmentAmount = ""
-        totalAmount = ""
-        paymentCompleted = false
-    }
 }

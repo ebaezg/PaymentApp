@@ -2,28 +2,38 @@ import UIKit
 
 class PaymentMethodView: UIViewController {
     @IBOutlet weak var tablePaymentMethods: UITableView?
+    @IBOutlet weak var indicator: UIActivityIndicatorView!
     
-    let cellIdentifier = "PaymentMethodViewCell"
+    let paymentMethodViewModel = PaymentMethodViewModel()
     var paymentMethods: [PaymentMethodModel]?
+    let cellIdentifier = "PaymentMethodViewCell"
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
-        tablePaymentMethods?.delegate = self
-        tablePaymentMethods?.dataSource = self
-        tablePaymentMethods?.register(UINib(nibName: cellIdentifier, bundle: .main), forCellReuseIdentifier: cellIdentifier)
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        PaymentMethodService.getPaymentMethods { [weak self] completion in
-            guard let self = self else { return }
-            self.paymentMethods = completion
-            self.tablePaymentMethods?.reloadData()
-        }
+        getPaymentMethods()
     }
     
     func setup() {
+        tablePaymentMethods?.delegate = self
+        tablePaymentMethods?.dataSource = self
+        tablePaymentMethods?.register(UINib(nibName: cellIdentifier, bundle: .main), forCellReuseIdentifier: cellIdentifier)
+        
         title = "Medio de Pago"
+        self.tablePaymentMethods?.isHidden = true
+    }
+    
+    func getPaymentMethods() {
+        paymentMethodViewModel.getPaymentMethods { [weak self] paymentMethods in
+            guard let self = self else { return }
+            self.indicator.stopAnimating()
+            self.tablePaymentMethods?.isHidden = false
+            self.paymentMethods = paymentMethods
+            self.tablePaymentMethods?.reloadData()
+        }
     }
 }
 
